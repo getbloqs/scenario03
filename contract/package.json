@@ -1,0 +1,14 @@
+{
+  "name": "bloqs-scenario03",
+  "version": "1.0.0",
+  "description": "bloqs scenario 03",
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "author": "Stefan Huber",
+  "license": "BSD",
+  "devDependencies": {
+    "zeppelin-solidity": "^1.5.0"
+  },
+  "dependencies": {}
+}
