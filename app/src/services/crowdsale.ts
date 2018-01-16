@@ -46,18 +46,19 @@ export class CrowdsaleImplementation {
         input = "" + input;
     
         if (input.length > decimals) {
-            var fraction:string = input.slice(-(decimals));
-            var full = input.slice(0, input.length - fraction.length);
+            let fraction = input.slice(-(decimals));
+            let full = input.slice(0, input.length - fraction.length);
             
-            var shortenFraction = 0;
-            for (var i = fraction.length; i >= 0; --i) {
+            let shortenFraction = 0;
+            for (let i = fraction.length; i >= 0; --i) {
                 if (fraction.charAt(i) != '0') {
                     break;
                 }
                 shortenFraction = i;
             }
     
-            return full + '.' + fraction.substring(0, shortenFraction);
+            let formattedFraction = fraction.substring(0, shortenFraction).trim();
+            return full + (formattedFraction.length > 0 ? ('.' + formattedFraction) : '');
         }
     }
 

@@ -7,7 +7,7 @@ if (mode == 'dev') {
     target = 'www';
 }
 
-var pathConfigDev = __dirname + '/../contract.dev.json';
+var pathConfigDev = __dirname + '/../contract.config.json';
 var pathTargetDev = __dirname + '/../' + target + '/contract.config.json';
 var pathWeb3Source = __dirname + '/../node_modules/web3/dist/web3.min.js';
 var pathWeb3Target = __dirname + '/../' + target + '/web3.min.js';

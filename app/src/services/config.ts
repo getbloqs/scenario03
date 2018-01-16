@@ -2,7 +2,7 @@ export class Config {
 
     static getConfig() : Promise<any> {
         return new Promise((resolve, reject) => {
-            fetch('/contract.config.json')
+            fetch('contract.config.json')
                 .then((response) => {
                     if (response.ok) {
                         return response.json();
@@ -15,7 +15,7 @@ export class Config {
 
     static getAbi(filename:string) : Promise<any> {
         return new Promise((resolve, reject) => {
-            fetch('/contracts/' + filename + '.json')
+            fetch('contracts/' + filename + '.json')
                 .then((response) => {                    
                     if (response.ok) {
                         return response.json();
